@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+:root {
+    --cor0: #8ff0bb;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+.indent > p {
+    text-indent: 2em;
+    text-align: justify;
+    padding: 1em 1em;
+    line-height: 2em;
+}
+.link > * > a {
+    background-color: var(--cor3);
+    border-radius: 3px;
+    padding: .1em;
+    text-decoration: none;
+    color: white;
+    transition-duration: .25s;
+}
+.link > * > a::after {
+    content: '🔗';
+}
+.link > * > a:hover {
+    background-color: var(--cor4);
+}
+.link > * > a:active {
+    background-color: var(--cor2);
+    color: black;
+    transition-duration: .15s;
+}
+.linkInPg > * > a {
+    color: white;
+    text-decoration: none;
+    margin: 0em .5em 0em 0em;
+    padding: .4em;
+    transition-duration: .25s;
+}
+.linkInPg > * > a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.29);
+    border-radius: 3px;
+}
+.linkInPg > * > a:active {
+    background-color: white;
+    transition-duration: .15s;
+}
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--cor1);
+}
+#header {
+    background-image: linear-gradient(var(--cor2), var(--cor4));
+    text-align: center;
+    color: white;
+    padding: 1em 0em 0em 0em;
+}
+#header > nav {
+    text-align: left;
+    padding: 1em 0em .5em 0.5em;
+}
+#header > h1 {
+    font-family: Agdasima, sans-serif;
+    margin: 0em 0em .8em 0em;
+    text-shadow: 2px 2px 2px var(--cor4);
+}
+#header > p {
+    padding: .3em;
+    text-align: center;
+}
+#footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    height: 2.1em;
+}
+#footer > * {
+    margin: auto;
+    padding: .5em;
+}
+#main {
+    padding: 2em;
+    background-color: white;
+    margin: auto;
+    max-width: 50em;
+}
+#main > article > h1, #main > article > h2 {
+    margin: 1em 0 .7em 0;
+    color: var(--cor4);
+    font-family: 'idroid';
+}
+img,picture,source {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.video {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border: 2em solid var(--cor4);
+    border-top-width: 1em;
+    border-bottom-width: 1em;
+    margin-left: -2em;
+    aspect-ratio: 16/9;
+}
+#aside {
+    margin: auto;
+    width: 100%;
+    background-color: #3cda8386;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.542);
+}
+#aside > header > p {
+    background-color: var(--cor4);
+    padding: .5em 1em;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+ul {
+    list-style-type:"\2713  ";
+    list-style-position: inside;
+    columns: 2;
+}
+p {
+    margin-top: 1em;
+}
+strong {
+    text-decoration: underline;
+    padding: 0 .4em;
+}
+h2 {
+    background-image: linear-gradient(90deg, var(--cor1) 50%, white);
+    padding: 3px;
+}
