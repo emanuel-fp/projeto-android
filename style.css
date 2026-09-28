@@ -75,13 +75,14 @@ body {
 }
 #header > p {
     padding: .3em;
-    text-align: center;
+    margin: auto;
+    max-width: 25em;
 }
 #footer {
     background-color: var(--cor4);
     color: white;
     text-align: center;
-    height: 2.1em;
+    height: fit-content;
 }
 #footer > * {
     margin: auto;
@@ -141,4 +142,9 @@ strong {
 h2 {
     background-image: linear-gradient(90deg, var(--cor1) 50%, white);
     padding: 3px;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--cor4), rgba(0, 0, 0, 0));
 }
